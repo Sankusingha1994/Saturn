@@ -63,7 +63,7 @@ const Wrapper = (props: wrapperProps) => {
 
       <Box className="body_content">{children}</Box>
 
-      {/* <Footer /> */}
+      <Footer />
 
       <Backdrop
         sx={{

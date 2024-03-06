@@ -12,7 +12,10 @@ import type { AppContext, AppProps } from "next/app";
 import App from "next/app";
 import React from "react";
 import { Provider } from "react-redux";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import { Toaster } from "sonner";
+
 
 /**
  * It suppresses the useLayoutEffect warning when running in SSR mode

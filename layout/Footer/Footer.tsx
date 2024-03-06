@@ -1,12 +1,10 @@
 import assest from "@/json/assest";
 import styled from "@emotion/styled";
-import Image from "next/image";
-import React from "react";
+import { List, ListItem } from "@mui/material";
 import Container from "@mui/material/Container";
 import { Box } from "@mui/system";
+import Image from "next/image";
 import Link from "next/link";
-import { List, ListItem } from "@mui/material";
-import path from "path";
 import { useRouter } from "next/router";
 
 const FooterWrap = styled(Box)`
@@ -158,7 +156,7 @@ const Footer = () => {
   const router = useRouter();
   return (
     <>
-      <FooterWrap>
+      <FooterWrap style={{ marginTop: "500px" }}>
         <Container fixed>
           <Box className="ftr-wrapper">
             <Link href="/" className="ftr-logo">
@@ -174,7 +172,7 @@ const Footer = () => {
                 </ListItem>
               ))}
             </List>
- 
+
             <Box className="copy">
               © 2023 <Link href="/">Career Utility.</Link> All Rights Reserved.
             </Box>
